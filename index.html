@@ -1,142 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>NACA | Nile Aerospace Compliance & Assurance</title>
-  <meta name="description" content="NACA provides aerospace compliance, quality, safety, and assurance consulting for manufacturers, MROs, suppliers, and aviation organizations." />
-  <link rel="stylesheet" href="style.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NACA | Nile Aerospace Compliance & Assurance</title>
+<style>
+body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#f5f7fa;color:#0b1f36}
+header{background:#071a2d;color:white;padding:18px 8%;display:flex;justify-content:space-between;align-items:center}
+header img{height:70px}
+nav a{color:white;text-decoration:none;margin-left:25px;font-weight:bold}
+.hero{background:linear-gradient(135deg,#071a2d,#102b46);color:white;padding:90px 8%;display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:center}
+.hero h1{font-size:56px;line-height:1;margin:10px 0}
+.hero p{font-size:20px;color:#d8e0e9}
+.logo-card{background:#18324f;padding:25px;border-radius:18px;text-align:center;box-shadow:0 20px 60px #0005}
+.logo-card img{max-width:100%;border-radius:12px}
+.btn{display:inline-block;background:#c8a35a;color:#071a2d;padding:14px 22px;border-radius:30px;text-decoration:none;font-weight:bold;margin-right:10px}
+.section{padding:70px 8%;background:white}
+.section.alt{background:#eef2f6}
+h2{font-size:38px;margin-top:0}
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.card{background:white;border:1px solid #dbe1e8;border-radius:16px;padding:24px;box-shadow:0 8px 25px #0001}
+.alt .card{background:#fff}
+.card h3{color:#071a2d}
+.founder{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.quote{background:#071a2d;color:white;padding:30px;border-radius:18px;border-left:7px solid #c8a35a;font-size:22px}
+footer{background:#071a2d;color:#cfd8e3;text-align:center;padding:25px}
+@media(max-width:800px){.hero,.founder{grid-template-columns:1fr}.cards{grid-template-columns:1fr}.hero h1{font-size:40px}nav a{display:block;margin:10px 0}}
+</style>
 </head>
 <body>
-  <header class="site-header">
-    <div class="container nav">
-      <a class="brand" href="#home">
-        <img src="naca-logo.png" alt="NACA logo" />
-      </a>
-      <nav>
-        <a href="#services">Services</a>
-        <a href="#about">About</a>
-        <a href="#founder">Founder</a>
-        <a href="#contact" class="nav-button">Contact</a>
-      </nav>
+
+<header>
+  <img src="naca-logo.png" alt="NACA Logo">
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#about">About</a>
+    <a href="#founder">Founder</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div>
+    <p>Nile Aerospace Compliance & Assurance</p>
+    <h1>Elevating Aerospace Compliance, Quality & Assurance</h1>
+    <p>NACA helps aerospace organizations strengthen quality systems, improve audit readiness, support regulatory compliance, and build confidence through practical, experience-based guidance.</p>
+    <a class="btn" href="#services">Explore Services</a>
+    <a class="btn" href="#contact">Contact NACA</a>
+  </div>
+  <div class="logo-card">
+    <img src="naca-logo.png" alt="NACA Logo">
+  </div>
+</section>
+
+<section class="section" id="services">
+  <h2>Consulting Services</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>Quality Management</h3>
+      <p>AS9100, AS9110, internal audits, QMS development, supplier quality, and process improvement.</p>
     </div>
-  </header>
-
-  <main id="home">
-    <section class="hero">
-      <div class="container hero-grid">
-        <div>
-          <p class="eyebrow">Nile Aerospace Compliance & Assurance</p>
-          <h1>Elevating Aerospace Compliance, Quality & Assurance</h1>
-          <p class="hero-text">
-            NACA helps aerospace organizations strengthen quality systems, improve audit readiness,
-            support regulatory compliance, and build confidence through practical, experience-based guidance.
-          </p>
-          <div class="hero-actions">
-            <a href="#services" class="primary-button">Explore Services</a>
-            <a href="#contact" class="secondary-button">Contact NACA</a>
-          </div>
-        </div>
-        <div class="hero-card">
-          <h2>Beyond Compliance. Built on Trust.</h2>
-          <p>
-            Supporting manufacturers, MROs, suppliers, and aviation organizations with compliance,
-            assurance, safety, quality, and operational excellence.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section class="trust">
-      <div class="container trust-grid">
-        <div><strong>15+</strong><span>Years Aerospace Experience</span></div>
-        <div><strong>FAA A&P</strong><span>Licensed Professional</span></div>
-        <div><strong>AS9100 / AS9110</strong><span>Lead Auditor Background</span></div>
-        <div><strong>Global</strong><span>Airline, MRO & Aerospace Experience</span></div>
-      </div>
-    </section>
-
-    <section id="services" class="section">
-      <div class="container">
-        <p class="eyebrow">Services</p>
-        <h2>Compliance and assurance support for aerospace organizations</h2>
-        <div class="cards">
-          <article>
-            <h3>Quality Management</h3>
-            <p>AS9100, AS9110, internal audits, QMS development, supplier quality, and process improvement support.</p>
-          </article>
-          <article>
-            <h3>Regulatory Compliance</h3>
-            <p>FAA Part 145 readiness, audit preparation, compliance assessments, and corrective action support.</p>
-          </article>
-          <article>
-            <h3>Corrective Action & RCA</h3>
-            <p>Root cause analysis, CAPA effectiveness, nonconformance trends, and sustainable corrective action systems.</p>
-          </article>
-          <article>
-            <h3>Safety & Environmental</h3>
-            <p>Safety management system support, risk assessment, environmental compliance, and operational assurance.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="about" class="section alt">
-      <div class="container split">
-        <div>
-          <p class="eyebrow">About NACA</p>
-          <h2>Practical guidance. Trusted judgment. Stronger systems.</h2>
-        </div>
-        <p>
-          NACA was created to help aerospace organizations meet regulatory requirements,
-          strengthen management systems, and build a culture of quality, safety, and continuous improvement.
-          We believe compliance should not be treated as a checkbox; it should create confidence,
-          reduce risk, and make organizations better.
-        </p>
-      </div>
-    </section>
-
-    <section id="founder" class="section">
-      <div class="container founder">
-        <div>
-          <p class="eyebrow">Founder</p>
-          <h2>Behailu Woldeyohnaes</h2>
-          <h3>Founder & Principal Consultant</h3>
-          <p>
-            Behailu Woldeyohnaes is an aerospace quality and compliance professional with more than
-            15 years of international aviation and aerospace experience across airlines, MROs,
-            manufacturing, and advanced aerospace programs. His background includes quality auditing,
-            regulatory compliance, supplier quality, safety management, production planning, and
-            continuous improvement.
-          </p>
-          <p class="credentials">
-            FAA A&P • ASQ Certified Quality Auditor • AS9100 / AS9110 Lead Auditor Background
-          </p>
-        </div>
-        <div class="quote">
-          “NACA exists to help organizations become stronger, safer, and more compliant — not just to pass audits.”
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="section contact">
-      <div class="container contact-box">
-        <p class="eyebrow">Contact</p>
-        <h2>Start a conversation with NACA</h2>
-        <p>
-          For consulting inquiries, audit readiness support, quality system assistance, or future collaboration,
-          contact NACA directly.
-        </p>
-        <a class="primary-button" href="mailto:takelebehailu@gmail.com">takelebehailu@gmail.com</a>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="container footer-grid">
-      <p>© 2026 NACA — Nile Aerospace Compliance & Assurance. All rights reserved.</p>
-      <p>nacanile.com</p>
+    <div class="card">
+      <h3>Regulatory Compliance</h3>
+      <p>FAA Part 145 readiness, audit preparation, compliance assessments, and corrective action support.</p>
     </div>
-  </footer>
+    <div class="card">
+      <h3>Corrective Action & RCA</h3>
+      <p>Root cause analysis, CAPA effectiveness, nonconformance trends, and sustainable corrective actions.</p>
+    </div>
+    <div class="card">
+      <h3>Safety & Environmental</h3>
+      <p>Safety management system support, risk assessment, environmental compliance, and operational assurance.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section alt" id="about">
+  <h2>About NACA</h2>
+  <p>NACA was created to help aerospace organizations meet regulatory requirements, strengthen management systems, and build a culture of quality, safety, and continuous improvement.</p>
+  <p><strong>Beyond Compliance. Built on Trust.</strong></p>
+</section>
+
+<section class="section founder" id="founder">
+  <div>
+    <h2>Behailu Woldeyohnaes</h2>
+    <h3>Founder & Principal Consultant</h3>
+    <p>Behailu Woldeyohnaes is an aerospace quality and compliance professional with more than 15 years of international aviation and aerospace experience across airlines, MROs, manufacturing, and advanced aerospace programs.</p>
+    <p><strong>FAA A&P • ASQ CQA • AS9100 / AS9110 Lead Auditor Background</strong></p>
+  </div>
+  <div class="quote">
+    “NACA exists to help organizations become stronger, safer, and more compliant — not just to pass audits.”
+  </div>
+</section>
+
+<section class="section alt" id="contact">
+  <h2>Contact NACA</h2>
+  <p>For consulting inquiries, audit readiness support, quality system assistance, or future collaboration:</p>
+  <p><strong>Email:</strong> <a href="mailto:takelebehailu@gmail.com">takelebehailu@gmail.com</a></p>
+</section>
+
+<footer>
+  © 2026 NACA — Nile Aerospace Compliance & Assurance | nacanile.com
+</footer>
+
 </body>
 </html>
