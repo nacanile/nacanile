@@ -4,104 +4,29 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>NACA | Nile Aerospace Compliance & Assurance</title>
+<meta name="description" content="NACA helps aerospace organizations achieve certification, regulatory compliance, audit readiness, RCCA/CAPA effectiveness, and sustainable management system excellence.">
 <style>
-body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#f5f7fa;color:#0b1f36}
-header{background:#071a2d;color:white;padding:18px 8%;display:flex;justify-content:space-between;align-items:center}
-header img{height:70px}
-nav a{color:white;text-decoration:none;margin-left:25px;font-weight:bold}
-.hero{background:linear-gradient(135deg,#071a2d,#102b46);color:white;padding:90px 8%;display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:center}
-.hero h1{font-size:56px;line-height:1;margin:10px 0}
-.hero p{font-size:20px;color:#d8e0e9}
-.logo-card{background:#18324f;padding:25px;border-radius:18px;text-align:center;box-shadow:0 20px 60px #0005}
-.logo-card img{max-width:100%;border-radius:12px}
-.btn{display:inline-block;background:#c8a35a;color:#071a2d;padding:14px 22px;border-radius:30px;text-decoration:none;font-weight:bold;margin-right:10px}
-.section{padding:70px 8%;background:white}
-.section.alt{background:#eef2f6}
-h2{font-size:38px;margin-top:0}
-.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
-.card{background:white;border:1px solid #dbe1e8;border-radius:16px;padding:24px;box-shadow:0 8px 25px #0001}
-.alt .card{background:#fff}
-.card h3{color:#071a2d}
-.founder{display:grid;grid-template-columns:1fr 1fr;gap:40px}
-.quote{background:#071a2d;color:white;padding:30px;border-radius:18px;border-left:7px solid #c8a35a;font-size:22px}
-footer{background:#071a2d;color:#cfd8e3;text-align:center;padding:25px}
-@media(max-width:800px){.hero,.founder{grid-template-columns:1fr}.cards{grid-template-columns:1fr}.hero h1{font-size:40px}nav a{display:block;margin:10px 0}}
+:root{--ink:#061522;--navy:#071a2d;--navy2:#102b46;--gold:#c8a35a;--gold2:#e7ca7a;--white:#fff;--soft:#f4f7fa;--muted:#637282;--line:#dbe4ed}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:#fff;line-height:1.6}.container{width:min(1180px,92%);margin:auto}
+header{position:sticky;top:0;z-index:100;background:rgba(6,21,34,.94);backdrop-filter:blur(16px);border-bottom:1px solid rgba(255,255,255,.12)}.nav{height:84px;display:flex;justify-content:space-between;align-items:center;gap:24px}.brand{display:flex;gap:16px;align-items:center;color:white;text-decoration:none}.brand img{width:128px;height:68px;object-fit:contain;border-radius:8px}.brand strong{display:block;letter-spacing:.18em}.brand span{display:block;font-size:.72rem;color:#cbd7e3;text-transform:uppercase;letter-spacing:.08em}nav{display:flex;gap:24px;align-items:center}nav a{color:#edf4fb;text-decoration:none;font-weight:700;font-size:.92rem}.nav-cta{padding:12px 18px;border-radius:999px;background:linear-gradient(135deg,var(--gold),var(--gold2));color:var(--ink)!important}
+.hero{position:relative;color:white;overflow:hidden;background:radial-gradient(circle at 78% 20%,rgba(200,163,90,.28),transparent 24%),linear-gradient(135deg,#061522 0%,#0b2239 48%,#12395b 100%)}.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(255,255,255,.04) 1px,transparent 1px),linear-gradient(rgba(255,255,255,.03) 1px,transparent 1px);background-size:76px 76px;mask-image:linear-gradient(to bottom,#000,transparent)}.hero-inner{position:relative;min-height:735px;display:grid;grid-template-columns:1.08fr .92fr;gap:56px;align-items:center;padding:72px 0 86px}.eyebrow{color:var(--gold2);text-transform:uppercase;letter-spacing:.18em;font-size:.78rem;font-weight:900;margin:0 0 18px}h1{font-size:clamp(3rem,6.2vw,6.4rem);line-height:.92;letter-spacing:-.06em;margin:0}h2{font-size:clamp(2.15rem,4vw,4rem);line-height:1.02;letter-spacing:-.045em;margin:0 0 16px}.hero-copy{max-width:740px;margin:26px 0 34px;color:#d8e2ec;font-size:1.2rem}.btn{display:inline-flex;min-height:50px;align-items:center;justify-content:center;padding:14px 20px;border-radius:999px;text-decoration:none;font-weight:900;margin-right:10px}.btn-primary{background:linear-gradient(135deg,var(--gold),var(--gold2));color:var(--ink)}.btn-outline{border:1px solid rgba(255,255,255,.35);color:white}.hero-panel{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);border-radius:34px;padding:26px;box-shadow:0 28px 90px rgba(0,0,0,.28)}.hero-panel img{display:block;width:100%;border-radius:22px;box-shadow:0 18px 60px rgba(0,0,0,.28);margin-bottom:24px}.metric-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.metric{padding:18px;border-radius:16px;background:rgba(0,0,0,.16);border:1px solid rgba(255,255,255,.12)}.metric strong{display:block;font-size:1.45rem}.metric span{color:#cbd7e3;font-size:.88rem}
+.section{padding:96px 0}.soft{background:linear-gradient(135deg,#f4f7fa,#fff)}.dark{background:var(--navy);color:white}.dark .lead{color:#cbd7e3}.head{max-width:860px;margin-bottom:42px}.lead{font-size:1.12rem;color:var(--muted);margin:0}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.card{background:white;border:1px solid var(--line);border-radius:28px;padding:30px;box-shadow:0 16px 52px rgba(7,26,45,.07);position:relative;overflow:hidden}.card:before{content:"";position:absolute;top:0;left:0;right:0;height:5px;background:linear-gradient(90deg,var(--gold),transparent)}.card p{color:var(--muted);margin:0}.icon{width:50px;height:50px;border-radius:15px;display:grid;place-items:center;background:#f2ead8;color:#8d6a25;font-size:1.1rem;font-weight:900;margin-bottom:18px}
+.split{display:grid;grid-template-columns:.92fr 1.08fr;gap:58px;align-items:center}.statement{background:var(--navy);color:white;border-radius:32px;padding:42px;border-left:7px solid var(--gold);box-shadow:0 28px 80px rgba(7,26,45,.22)}.statement h3{font-size:2.05rem;line-height:1.05;margin-top:0}.statement p{color:#d8e2ec}.bullets{display:grid;gap:16px}.bullet{display:flex;gap:14px;align-items:flex-start;background:white;border:1px solid var(--line);border-radius:20px;padding:18px}.check{width:30px;height:30px;border-radius:50%;background:var(--gold);display:grid;place-items:center;font-weight:900;flex:none}
+.process{display:grid;grid-template-columns:repeat(6,1fr);gap:14px}.step{padding:22px;border-radius:22px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12)}.step b{display:block;color:var(--gold2);font-size:1.45rem}.step span{color:#cbd7e3;font-size:.92rem}.industry-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:18px}.industry{padding:24px;border-radius:22px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);min-height:130px}.industry span{color:#cbd7e3;font-size:.92rem}
+.founder-grid{display:grid;grid-template-columns:1fr .75fr;gap:36px}.bio{border:1px solid var(--line);border-radius:32px;padding:42px;box-shadow:0 16px 52px rgba(7,26,45,.07)}.bio h3{color:var(--gold);text-transform:uppercase;letter-spacing:.12em;font-size:1rem}.bio p{color:var(--muted)}.pills{display:flex;gap:10px;flex-wrap:wrap}.pill{padding:10px 13px;border-radius:999px;background:#f0f4f8;font-weight:800;font-size:.9rem}.quote{display:flex;align-items:end;background:var(--navy);color:white;border-left:7px solid var(--gold);border-radius:32px;padding:40px;box-shadow:0 28px 80px rgba(7,26,45,.22);font-size:1.5rem;line-height:1.25}
+.contact-box{display:grid;grid-template-columns:1fr .7fr;gap:34px;background:var(--navy);color:white;border-radius:36px;padding:52px;box-shadow:0 28px 80px rgba(7,26,45,.22)}.contact-box p{color:#d8e2ec}.email-card{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);border-radius:24px;padding:28px}.email-card a{color:var(--gold2);font-weight:900;word-break:break-word}footer{background:#04101b;color:#c5cfda;padding:30px 0}.footer-row{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+@media(max-width:980px){nav{display:none}.hero-inner,.split,.founder-grid,.contact-box{grid-template-columns:1fr}.cards{grid-template-columns:1fr 1fr}.process{grid-template-columns:1fr 1fr 1fr}.industry-grid{grid-template-columns:1fr 1fr}.hero-inner{min-height:auto}.brand span{display:none}}@media(max-width:640px){.cards,.metric-grid,.process,.industry-grid{grid-template-columns:1fr}.section{padding:70px 0}.hero-inner{padding:56px 0 66px}.bio,.quote,.contact-box,.statement{padding:28px}.brand img{width:96px;height:56px}h1{font-size:3rem}}
 </style>
 </head>
 <body>
-
-<header>
-  <img src="naca-logo.png" alt="NACA Logo">
-  <nav>
-    <a href="#services">Services</a>
-    <a href="#about">About</a>
-    <a href="#founder">Founder</a>
-    <a href="#contact">Contact</a>
-  </nav>
-</header>
-
-<section class="hero">
-  <div>
-    <p>Nile Aerospace Compliance & Assurance</p>
-    <h1>Elevating Aerospace Compliance, Quality & Assurance</h1>
-    <p>NACA helps aerospace organizations strengthen quality systems, improve audit readiness, support regulatory compliance, and build confidence through practical, experience-based guidance.</p>
-    <a class="btn" href="#services">Explore Services</a>
-    <a class="btn" href="#contact">Contact NACA</a>
-  </div>
-  <div class="logo-card">
-    <img src="naca-logo.png" alt="NACA Logo">
-  </div>
-</section>
-
-<section class="section" id="services">
-  <h2>Consulting Services</h2>
-  <div class="cards">
-    <div class="card">
-      <h3>Quality Management</h3>
-      <p>AS9100, AS9110, internal audits, QMS development, supplier quality, and process improvement.</p>
-    </div>
-    <div class="card">
-      <h3>Regulatory Compliance</h3>
-      <p>FAA Part 145 readiness, audit preparation, compliance assessments, and corrective action support.</p>
-    </div>
-    <div class="card">
-      <h3>Corrective Action & RCA</h3>
-      <p>Root cause analysis, CAPA effectiveness, nonconformance trends, and sustainable corrective actions.</p>
-    </div>
-    <div class="card">
-      <h3>Safety & Environmental</h3>
-      <p>Safety management system support, risk assessment, environmental compliance, and operational assurance.</p>
-    </div>
-  </div>
-</section>
-
-<section class="section alt" id="about">
-  <h2>About NACA</h2>
-  <p>NACA was created to help aerospace organizations meet regulatory requirements, strengthen management systems, and build a culture of quality, safety, and continuous improvement.</p>
-  <p><strong>Beyond Compliance. Built on Trust.</strong></p>
-</section>
-
-<section class="section founder" id="founder">
-  <div>
-    <h2>Behailu Woldeyohnaes</h2>
-    <h3>Founder & Principal Consultant</h3>
-    <p>Behailu Woldeyohnaes is an aerospace quality and compliance professional with more than 15 years of international aviation and aerospace experience across airlines, MROs, manufacturing, and advanced aerospace programs.</p>
-    <p><strong>FAA A&P • ASQ CQA • AS9100 / AS9110 Lead Auditor Background</strong></p>
-  </div>
-  <div class="quote">
-    “NACA exists to help organizations become stronger, safer, and more compliant — not just to pass audits.”
-  </div>
-</section>
-
-<section class="section alt" id="contact">
-  <h2>Contact NACA</h2>
-  <p>For consulting inquiries, audit readiness support, quality system assistance, or future collaboration:</p>
-  <p><strong>Email:</strong> <a href="mailto:takelebehailu@gmail.com">takelebehailu@gmail.com</a></p>
-</section>
-
-<footer>
-  © 2026 NACA — Nile Aerospace Compliance & Assurance | nacanile.com
-</footer>
-
-</body>
-</html>
+<header><div class="container nav"><a class="brand" href="#home"><img src="naca-logo.png" alt="NACA logo"><div><strong>NACA</strong><span>Nile Aerospace Compliance & Assurance</span></div></a><nav><a href="#services">Services</a><a href="#rcca">RCCA</a><a href="#about">About</a><a href="#industries">Industries</a><a href="#founder">Founder</a><a class="nav-cta" href="#contact">Contact</a></nav></div></header>
+<main id="home">
+<section class="hero"><div class="container hero-inner"><div><p class="eyebrow">Aerospace Quality • Regulatory • Certification • Training</p><h1>Helping aerospace organizations become audit-ready, compliant, and stronger.</h1><p class="hero-copy">NACA supports aerospace manufacturers, MROs, suppliers, and aviation organizations with certification readiness, regulatory compliance, audit preparation, RCCA/CAPA implementation, training, and sustainable management system improvement.</p><a class="btn btn-primary" href="#services">View Services</a><a class="btn btn-outline" href="#contact">Start a Conversation</a></div><aside class="hero-panel"><img src="naca-logo.png" alt="NACA metallic logo"><div class="metric-grid"><div class="metric"><strong>15+</strong><span>years aerospace experience</span></div><div class="metric"><strong>FAA A&P</strong><span>licensed professional</span></div><div class="metric"><strong>AS9100</strong><span>audit & QMS expertise</span></div><div class="metric"><strong>RCCA</strong><span>corrective action support</span></div></div></aside></div></section>
+<section class="section" id="services"><div class="container"><div class="head"><p class="eyebrow">Core Services</p><h2>Built around the needs of aerospace organizations seeking certification, compliance, and improvement.</h2><p class="lead">NACA is focused on practical implementation — not just advice, reports, or checklists.</p></div><div class="cards"><article class="card"><div class="icon">01</div><h3>Certification & Accreditation Readiness</h3><p>AS9100, AS9110, AS9120, ISO 9001, certification preparation, gap assessments, documentation review, and readiness planning.</p></article><article class="card"><div class="icon">02</div><h3>Regulatory Approval Support</h3><p>FAA Part 145 readiness, repair station quality system support, regulatory compliance assessments, audit preparation, and surveillance readiness.</p></article><article class="card"><div class="icon">03</div><h3>Internal & Supplier Audits</h3><p>Internal audits, supplier audits, mock certification audits, process audits, compliance assessments, and audit report support.</p></article><article class="card"><div class="icon">04</div><h3>RCCA / CAPA Implementation</h3><p>Root cause analysis, corrective action planning, implementation support, effectiveness verification, and recurrence prevention.</p></article><article class="card"><div class="icon">05</div><h3>Training & Coaching</h3><p>RCA, RCCA, CAPA, internal auditor training, AS9100 awareness, risk-based thinking, quality culture, and management review coaching.</p></article><article class="card"><div class="icon">06</div><h3>Safety & Environmental Assurance</h3><p>Safety management system support, environmental compliance awareness, risk assessments, and operational assurance improvement.</p></article></div></div></section>
+<section class="section dark" id="rcca"><div class="container"><div class="head"><p class="eyebrow">Signature Focus</p><h2>RCCA and corrective action support that goes beyond paperwork.</h2><p class="lead">Many organizations can identify findings. Fewer can implement corrective actions that truly prevent recurrence. NACA helps close that gap.</p></div><div class="process"><div class="step"><b>1</b><strong>Define</strong><span>Clarify the problem and contain risk.</span></div><div class="step"><b>2</b><strong>Analyze</strong><span>Use structured root cause methods.</span></div><div class="step"><b>3</b><strong>Plan</strong><span>Develop realistic corrective actions.</span></div><div class="step"><b>4</b><strong>Implement</strong><span>Support action owners through execution.</span></div><div class="step"><b>5</b><strong>Verify</strong><span>Check effectiveness with evidence.</span></div><div class="step"><b>6</b><strong>Sustain</strong><span>Prevent recurrence and strengthen the system.</span></div></div></div></section>
+<section class="section soft" id="about"><div class="container split"><div class="statement"><h3>Beyond Compliance. Built on Trust.</h3><p>NACA exists to help organizations become safer, stronger, more compliant, and better prepared for certification, accreditation, regulatory approval, and long-term operational excellence.</p></div><div><p class="eyebrow">About NACA</p><h2>Practical guidance. Trusted judgment. Sustainable improvement.</h2><div class="bullets"><div class="bullet"><span class="check">✓</span><div><strong>Certification with confidence</strong><br><span>Helping organizations prepare for audits and certification without turning compliance into bureaucracy.</span></div></div><div class="bullet"><span class="check">✓</span><div><strong>Implementation mindset</strong><br><span>We help companies implement actions, verify effectiveness, and improve the system.</span></div></div><div class="bullet"><span class="check">✓</span><div><strong>Built from real aerospace experience</strong><br><span>Experience across airlines, MROs, aerospace manufacturing, supplier quality, and compliance environments.</span></div></div></div></div></div></section>
+<section class="section dark" id="industries"><div class="container"><p class="eyebrow">Industries Served</p><h2>Aerospace-focused. Globally minded.</h2><p class="lead">NACA supports organizations across the aviation and aerospace value chain.</p><div class="industry-grid"><div class="industry"><strong>Aerospace Manufacturing</strong><span>Components, assemblies, production, and quality systems.</span></div><div class="industry"><strong>MRO / Repair Stations</strong><span>FAA Part 145 and maintenance compliance environments.</span></div><div class="industry"><strong>Suppliers</strong><span>Supplier quality, audits, development, and performance.</span></div><div class="industry"><strong>Business Aviation</strong><span>Quality, regulatory, and operational assurance support.</span></div><div class="industry"><strong>Emerging Aviation</strong><span>Startups, UAV/drone suppliers, and growing aerospace companies.</span></div></div></div></section>
+<section class="section" id="founder"><div class="container founder-grid"><article class="bio"><p class="eyebrow">Founder</p><h2>Behailu Woldeyohnaes</h2><h3>Founder & Principal Consultant</h3><p>Behailu Woldeyohnaes is an aerospace quality and compliance professional with more than 15 years of international aviation and aerospace experience across airlines, MROs, manufacturing, and advanced aerospace programs.</p><p>His experience includes auditing, regulatory compliance, supplier quality, safety management, production planning, RCCA/CAPA, and continuous improvement. NACA was founded to help organizations use compliance as a path to stronger performance.</p><div class="pills"><span class="pill">FAA A&P</span><span class="pill">ASQ CQA</span><span class="pill">AS9100 / AS9110</span><span class="pill">RCCA / CAPA</span><span class="pill">Quality & Compliance</span></div></article><aside class="quote">“NACA exists to help organizations become stronger, safer, and more compliant — not just to pass audits.”</aside></div></section>
+<section class="section soft" id="contact"><div class="container contact-box"><div><p class="eyebrow">Contact</p><h2>Start a conversation with NACA</h2><p>For certification readiness, regulatory support, RCCA/CAPA implementation, audits, training, or future collaboration, contact NACA directly.</p></div><div class="email-card"><strong>Email</strong><p><a href="mailto:takelebehailu@gmail.com">takelebehailu@gmail.com</a></p><p>Professional NACA email coming soon.</p></div></div></section>
+</main><footer><div class="container footer-row"><span>© 2026 NACA — Nile Aerospace Compliance & Assurance</span><span>nacanile.com</span></div></footer>
+</body></html>
